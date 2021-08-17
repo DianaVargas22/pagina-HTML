@@ -1,0 +1,62 @@
+/*
+Selector universal 
+*/
+*{
+ font-family: Verdana, Geneva, Tahoma, sans-serif; 
+ 
+}
+/*Selectores etiqueta*/
+body{
+    background-color: blanchedalmond;
+}
+
+
+/*Selectores de ID y selectores de clase*/
+#navbar{
+    background-color: darksalmon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+#logo{
+    font-size: 30px;
+}
+
+.reviews{
+    color: darkviolet;
+}
+
+/*Selectores de atributo*/
+
+input[type="text"]{
+    padding: 10px;
+
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+}
+
+/*selectores hijo*/
+
+#navbar > li > a{
+    color: red;
+}
+
+.card #title{
+    font-size: 40px;
+    font-family: Helvetica;
+    font-style: italic;
+    line-height: 70px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+p{
+    font-weight: bold;
+}
+
