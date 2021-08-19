@@ -11,125 +11,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 
-
+    
 </head>
 
-<body id="principal-content">
+<body id="todo-el-contenido">
     <nav id="navbar">
         <ul>
             <li id="logo"> <a href="#"> LOGO </a> </li>
-            <li> <a href="#" class="navbar-medio"> Hola </a> </li>
-            <li> <a href="#footer2" class="navbar-medio"> Proyectos </a> </li>
-            <li> <a href="#" class="navbar-medio"> Hablemos</a> </li>
+            <li> <a class="hide" href="#"> Hola </a> </li>
+            <li> <a class="hide" href="#"> Proyectos </a> </li>
+            <li> <a class="hide" href="#hablemos"> Hablemos</a> </li>
             <li> <button> Descargar Curriculum </button></li>
         </ul>
     </nav>
     <div class="clearfix"></div>
     <section>
-        <div class="card">
-            <div class="info">
-                <h1 id="title">
-                    <span id="titulo-1"> ¡Hola a todos! </span> <br> <span id="titulo-2"> Soy Elisa </span></h1>
-                <p class="reviews"> Una Frontend Developer que le encanta implementar diseños <br> que inspiran y atraen
-                    a
+        <div id="seccion-Hola">
+            <div id="presentacion">
+                <h1> <span id="titulo1">Hola a todos </span>  <br> <span id="titulo2"> Soy Elisa </span> </h1>
+                <p class="reviews"> Una Frontend Developer que le encanta implementar diseños <br> que inspiran y atraen a
                     las personas. </p>
                 <ul>
-                    <li> <a href="#"> <i class="fas fa-phone-alt social-icon"></i> </a> </li>
-                    <li> <a href="#"> <i class="fas fa-envelope social-icon"></i> </a> </li>
-                    <li> <a href="#"> <i class="fab fa-instagram-square social-icon"></i> </a> </li>
-                    <li> <a href="#"> <i class="fab fa-twitter social-icon"></i> </a> </li>
+                    <li> <a href="#"> <i class="fas fa-phone-alt"></i> </a> </li>
+                    <li> <a href="#"> <i class="fas fa-envelope"></i> </a> </li>
+                    <li> <a href="#"> <i class="fas fa-envelope"></i> </a> </li>
+                    <li> <a href="#"> <i class="fas fa-envelope"></i> </a> </li>
                 </ul>
             </div>
-            <div class="image">
-
+            <div id="foto">
                 <img src="./Imagenes/person.png" alt="Esta es una foto de Elisa">
             </div>
-
         </div>
-        <div id="info-proyects">
-            <p id="info-proyects-p1">A lo largo de mi carrera como Frontend, he tenido el <br> privilegio de trabajar en
-                proyectos retadores e
+        <div>
+            <p>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e
                 increíbles </p>
-            <p id="info-proyects-p2"> Aquí hay algunos que me gustaría compartir.</p>
+            <p> Aquí hay algunos que me gustaría compartir.</p>
             <img src="./Imagenes/arrow-down.png" alt="flecha">
         </div>
         <div class="card-project">
             <div class="card-description">
-                <h2>Leonidadesteban.com</h2>
-                <p>Accede a más de 120 proyectos que te ayudarán a mejorar <br> tus habilidades como desarrollador
-                    Front-End.
+                <span class="card-description-title">Leonidadesteban.com</span>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.
                 </p>
-                <div class="card-code">
-                    <a href="#"> Ver proyecto </a>
-                    <a href="#"> <i class="fab fa-github"></i> Ver codigo </a>
-                </div>
+                <a> Ver proyecto </a>
+                <a> Ver codigo </a>
             </div>
-            <div class="card-image">
+            <div>
                 <img src="./Imagenes/img.png" alt="ipad">
             </div>
 
         </div>
         <div class="card-review">
-            <div class="card-review-styles">
-                <img src="./Imagenes/user.png" alt="usuario">
-                <span class="review">
-                    <p>"Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos <br> de desarrollo. Lo que nos
-                        hubiera
-                        llevado 6 meses solo les llevó <br> 1,5 meses." </p>
-                </span>
-                <span class="author">
-                    <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
-                </span>
-            </div>
-
+            <img src="./Imagenes/user.png" alt="usuario">
+            <span class="review">
+                <p>"Elisa ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera
+                    llevado 6 meses solo les llevó 1,5 meses." </p>
+            </span>
+            <span class="author">
+                <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
+            </span>
         </div>
 
         <div class="card-project">
-            <div class="card-image">
-                <img id="ipad" src="./Imagenes/📱 iPad.png" alt="ipad">
+            <div>
+                <img src="./Imagenes/📱 iPad.png" alt="ipad">
 
             </div>
-            <div class="card-description" id="description-marvol">
-                <h2> Marvol</h2>
+            <div class="card-description">
+                <span class="card-description-title">Marvol</span>
                 <p> Es el sitio oficial de Marvol Entertainment. Explore películas, personajes, cómics, programas de
                     televisión, videos y más oficiales de Marvol.</p>
-
-                <div class="card-code">
-                    <a href="#"> Ver proyecto </a>
-                    <a href="#"> <i class="fab fa-github"></i> Ver codigo </a>
-                </div>
+                <a href="#"> Ver proyecto </a>
+                <a href="#"> Ver codigo </a>
             </div>
         </div>
 
         <div class="card-review">
-            <div class="card-review-styles">
-                <img src="./Imagenes/user.png" alt="usuario">
-                <span class="review">
-                    <p>"Elisa ha superado mis expectativas desde el diseño hasta el desarrollo." </p>
-                </span>
-                <span class="author">
-                    <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
-                </span>
-            </div>
-        </div>
-        <div class="card-project">
-            <div class="card-description" id="description-marvol">
-                <h2>Leonidadesteban.com</h2>
-                <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.
-                </p>
-                <div class="card-code">
-                    <a href="#"> Ver proyecto </a>
-                    <a href="#"> <i class="fab fa-github"></i> Ver codigo </a>
-                </div>
-            </div>
-            <div class="card-image">
-                <img id="iphone" src="./Imagenes/📱 Iphone X.png" alt="iphone">
-            </div>
-
-        </div>
-
-        <div class="card-review" id="last-card-review">
-            <div class="card-review-styles">
             <img src="./Imagenes/user.png" alt="usuario">
             <span class="review">
                 <p>"Elisa ha superado mis expectativas desde el diseño hasta el desarrollo." </p>
@@ -138,14 +95,38 @@
                 <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
             </span>
         </div>
+        <div class="card-project">
+            <div class="card-description">
+                <span class="card-description-title">Leonidadesteban.com</span>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.
+                </p>
+                <a href="#"> Ver proyecto </a>
+                <a href="#"> Ver codigo </a>
+            </div>
+            <div>
+                <img src="./Imagenes/📱 Iphone X.png" alt="iphone">
+            </div>
+
+        </div>
+
+        <div class="card-review">
+            <img src="./Imagenes/user.png" alt="usuario">
+            <span class="review">
+                <p>"Elisa ha superado mis expectativas desde el diseño hasta el desarrollo." </p>
+            </span>
+            <span class="author">
+                <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
+            </span>
         </div>
 
 
     </section>
-    <aside id="footer">
+    <footer id="footer2">
         <h2> HABLEMOS</h2>
-        <p> Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
-        <form>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, delectus, repudiandae explicabo fugiat
+            porro commodi neque accusantium labore assumenda laboriosam provident quis quas itaque voluptatibus laborum
+            officiis nostrum nisi molestias!</p>
+        <form id="hablemos">
             <Label for="name"> Nombre Completo </Label>
             <br>
             <input type="text" placeholder="Diana"> <br>
@@ -154,33 +135,30 @@
             <input type="email" placeholder="diana@gmail.com"> <br>
             <label for="message"> Mensaje </label>
             <br>
-            
-            <textarea name="comentarios" rows="10" cols="40"> Escribe aquí tus comentarios </textarea>
-            <br>
+            <input type="text"> <br>
             <input type="submit">
         </form>
-    </aside>
-        <footer id="footer2">
+        <div>
             <ul>
                 <li> LOGO </li>
                 <li>
-                    <p> Hecho con  de Elisa. Copyright 2021 - Todos los derechos reservados.</p>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit modi quaerat eum autem quis
+                        nihil perferendis odit deleniti atque cum libero dicta, laborum delectus ratione error tenetur
+                        mollitia aut repellat.</p>
                 </li>
                 <li>
-                    <ul id="social-media">
-                        <li> <a href="#"> <i class="fas fa-phone-alt social-icon"></i> </a> </li>
-                        <li> <a href="#"> <i class="fas fa-envelope social-icon"></i> </a> </li>
-                        <li> <a href="#"> <i class="fab fa-instagram-square social-icon"></i> </a> </li>
-                        <li> <a href="#"> <i class="fab fa-twitter social-icon"></i> </a> </li>
+                    <ul>
+                        <li> <a href="#"> Phone </a> </li>
+                        <li> <a href="#"> Gmail </a> </li>
+                        <li> <a href="#"> Instagram </a> </li>
+                        <li> <a href="#"> Twitter </a> </li>
                     </ul>
                 </li>
             </ul>
-        
-        </footer>
-    <div class="elipse">
-        <img src="./Imagenes/Ellipse 2.png" alt="">
-    </div>
+        </div>
+    </footer>
+
+    
 </body>
 <script src="https://kit.fontawesome.com/b2f11c98cb.js" crossorigin="anonymous"></script>
-
 </html>

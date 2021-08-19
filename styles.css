@@ -1,6 +1,6 @@
 @font-face {
     font-family: oxygen;
-    src: url(./fonts/Oxygen-Regular.ttf);
+    src: url(/fonts/Oxygen-Regular.ttf);
 }
 
 .clearfix{
@@ -9,445 +9,137 @@
 }
 
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
-#principal-content{
-    background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+body{
     font-family: 'oxygen';
+    background: linear-gradient(135deg, #FAD7A1 0%, #E96D71 100%);
+}
+
+#todo-el-contenido{
     width: 80%;
     margin: 0px auto;
-    
 }
 
 #navbar{
     width: 100%;
     height: 60px;
-    list-style: none;
-    padding-top: 20px;  
+    margin-top: 20px;
 }
 
+#navbar ul{
+    list-style: none;
+}
 
-#navbar ul li {
-    line-height: 60px;
+#navbar ul li{
     display: block;
     float: left;
     margin-left: 40px;
-    
+    line-height: 60px;
 }
 
 #navbar ul li a{
-
     text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
-#navbar ul li .navbar-medio{
     color: rgba(0, 0, 0, 0.527);
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
-#navbar ul li .navbar-medio:hover{
+#navbar ul li a:hover{
     color: black;
 }
 
 #navbar ul li:first-child a{
-
-    margin-right: 300px;
-    font-weight: 900;
+    font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    margin-right: 300px;
+    font-size: 24px;
+    color: black;   
 }
-
-#navbar ul li:last-child{
-    margin-left: 135px;
-}
-
 
 #navbar ul li button{
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #42e2bb;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 90px;
+    margin-left: 40px;
     font-family: 'oxygen';
-    align-items: center;
+    background-color: #42E2B8;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 90px;
+    border: 2px solid black;
 }
 
-#navbar ul li button:hover{
-    background-color: #3ac5a2;  
-}
-.card{
+#seccion-Hola{
     width: 100%;
-    margin-bottom: 50px;
-    padding-top: 20px;
+    height: 90vh;
 }
 
-.info{
+#presentacion{
     width: 50%;
+    height: 100%;
     float: left;
-    margin-top: 140px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
 }
-.info #title{
-    line-height: 95px;
+#foto img{
+    
+    width: 50%;
 }
-.info #title #titulo-1{
+#presentacion h1{
+    line-height: 65px;
+}
+#presentacion #titulo1{
     font-size: 48px;
-
 }
-.info #title #titulo-2{
+
+#presentacion #titulo2{
     font-size: 59px;
-
 }
 
-.info ul{
-    margin-top: 20px;
-}
-
-.info ul li {
-    list-style: none;
-    float: left;
-    padding: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin: 10px;
-    background-color: #42e2bb;
-    border: 2px solid black;
-}
-
-.info ul li a{
-    text-decoration: none;
-    color: black;
-}
-.info ul li:hover{
-    background-color: #3ac5a2;
-}
-
-.elipse{
-    position: absolute;
-    top: 70px;
-    left: -20px;
-    z-index: -2;
-}
-
-.image{
-    width: 50%;
-}
-
-#info-proyects{
-    width: 100%;
-    text-align: center;
-    line-height: 60px;
-    padding-top: 220px;
-    padding-bottom: 200px;
-}
-#info-proyects #info-proyects-p1{
-    font-size: 39px;
-}
-
-#info-proyects #info-proyects-p2{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#info-proyects img{
-    margin-top: 20px;
-    padding: 50px;
-    animation-name: flecha;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    
-}
-
-@keyframes flecha {
-    0%{
-        transform: translateY(0%);
-
-    }50%{
-        transform: translateY(10%);
-    }100%{
-        transform: translateY(0%);
-    }
-    
-}
-
-.card-project{
-    width: 100%;
-    height: 100vh;
-}
-.card-description{
-    width: 50%;
-    float: left;
-}
-.card-image img{
-    width: 50%;
-}
-.card-image #ipad{
-    float: left;
-}
-.card-image #iphone{
-    width: 30%;
-    margin-left: 0px;
-}
-.card-description h2{
-    width: min-content;
-    padding: 10px;
-    color: #42e2bb;
-    background-color: black;
-    box-shadow: -3px 3px 2px white; 
-    text-transform: lowercase;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-
-.card-description p{
-    font-size: 24px;
-}
-.card-code{
-    margin-top: 50px;
-    
-}
-
-.card-code a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-color: #42e2bb;
-    padding: 17px;
-    border: 2px solid black;
-    border-radius: 90px;
-    font-family: 'oxygen';
-    align-items: center;
-    margin-right: 10px;
-    text-align: center;
-}
-
-.card-review{
-    width: 100%;
-    height: 100vh;
-    
-    
-}
-.card-review-styles{
-    padding: 80px;
-    background-color: #f5baa3;
-    width: 80%;
-    border: 1px solid white;
-    border-radius: 24px;
-    margin: 0px auto;
-    line-height: 55px;
-    
-}
-.card-review-styles img{
-    display: block;
-    margin: 0px auto;
-}
-.card-review-styles .review{
-    font-size: 34px;
-    text-align: center;
-    
-}
-
-.card-review-styles .author{
-    font-size: 24px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.527);
-}
-
-#description-marvol{
-    padding-top: 100px;
-}
-
-aside{
-    width: 50%;
-    height: 70vh;
-    margin: 0px auto;
-}
-
-aside h2{
-    display: block;
-    margin: 0px auto;
-    width: min-content;
-    padding: 10px;
-    color: #42e2bb;
-    background-color: black;
-    box-shadow: -3px 3px 2px white; 
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    
-    font-size: 30px;   
-}
-
-#last-card-review{
-    height: 70vh;
-}
-
-aside p{
-    text-align: center;
+#presentacion p{
     font-size: 16px;
-}
-
-aside form label{
-    font-size: 16px;
-    font-weight: bold;
-}
-
-aside form input[type="text"],input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 7px;
-    border-radius: 5px;
-    border: 0px ;
-}
-aside form textarea{
-    width: 100%;
-    padding: 10px;
-    margin: 7px;
-    border-radius: 5px;
-    border: 0px 
-}
-
-aside form input[type="submit"]{
-    width: 100%;
-    display: block;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 24px;
-    background-color: #42e2bb;   
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-footer{
-    width: 100%;
-    margin-top:50px ;
     margin-bottom: 10px;
 }
 
-footer ul {
+#presentacion ul{
     list-style: none;
+}
+
+#presentacion ul li{
+   float: left; 
+   margin: 15px;
+   padding: 10px;
+   padding-left: 15px;
+   padding-right: 15px;
+   background-color: #42E2B8;
+   border: 2px solid black;
+}
+
+#presentacion ul li a{
     color: black;
 }
 
-footer > ul > li{
-    float: left;
-    margin-right: 60px;
-    
-}
+@media (max-width: 412px) {
 
-footer > ul > li:first-child{
-    
-    margin-right: 300px;
-    font-weight: 900;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-}
-
-#social-media li{
-    
-    list-style: none;
-    float: left;
-    padding: 9px;
-    padding-left: 12x;
-    padding-right: 12px;
-    margin-right: 10px;
-    background-color: #42e2bb;
-    border: 2px solid black;
-    
-}
-
-#social-media a{
-    text-align: center;
-    color: black;
-}
-
-
-@media (max-width:767px) {
-
-    #principal-content{
-        width: 90%;   
-    }
-
-    .navbar-medio{
+    #navbar .hide{
         display: none;
-        visibility:hidden;       
+        visibility: hidden;
     }
 
-    #navbar ul li:first-child {
-        margin-right: 0px;
-        
-    }
-    #navbar ul li:last-child {
-        display: block;
-        margin-left: 0px;
-        
-    }
-
-    .info{
-        width: 100%;
-        float: none;
-        margin-top: 20px;    
-    }
-
-    .image img{
-        width: 85vw;
-    }
-
-    #info-proyects{
-        padding-top: 20px;
-        line-height: 40px;
-        padding-bottom: 20px;
-    }
-
-    #info-proyects #info-proyects-p1{
-        font-size: 24px;
-        
-    }
-    .card-description{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
-    .card-code a{
-        font-size: 14px;
-        padding: 15px;
-    }
-    .card-image img{
-        width: 100%;
-    }
-    
-    .card-review{
+    #presentacion{
         width: 100%;
         height: fit-content;
+        float: none;
+        margin-top: 20px;
         margin-bottom: 20px;
-        
-    }
-    
-    .card-review-styles{
-    padding: 20px;
-    
-    line-height: 30px;
-    
-    }
-    .card-review-styles .review{
-        font-size: 24px;
     }
 
-    .card-review-styles .author{
-    font-size: 14px;
-    }
-    #description-marvol{
-        padding-top: 20px;
-    }
-    .card-image #iphone{
+    #foto img{
         width: 100%;
-        margin-left: 20px;
     }
-    #last-card-review{
-        margin-top: 140px;
-    }
+    
 }
